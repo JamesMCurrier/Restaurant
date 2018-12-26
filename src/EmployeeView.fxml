@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="420.0" prefWidth="600.0" style="-fx-background-color: violet;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="EmployeeViewController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="69.0" layoutX="74.0" layoutY="113.0" stroke="BLACK" strokeType="INSIDE" width="178.0" />
+      <Button layoutX="320.0" layoutY="107.0" mnemonicParsing="false" onAction="#openServer" prefHeight="93.0" prefWidth="251.0" style="-fx-border-color: black;" text="Server">
+         <font>
+            <Font name="Leelawadee UI Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="320.0" layoutY="200.0" mnemonicParsing="false" onAction="#openChef" prefHeight="93.0" prefWidth="251.0" style="-fx-border-color: black;" text="Chef">
+         <font>
+            <Font name="Leelawadee UI Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="37.0" layoutY="200.0" mnemonicParsing="false" onAction="#openManager" prefHeight="93.0" prefWidth="251.0" style="-fx-border-color: black;" text="Manager">
+         <font>
+            <Font name="Leelawadee UI Bold" size="24.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" layoutX="79.0" layoutY="23.0" prefHeight="45.0" prefWidth="482.0" text="Welcome to the Resturant">
+         <font>
+            <Font name="MS Outlook" size="37.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="TOP" layoutX="77.0" layoutY="113.0" prefHeight="69.0" prefWidth="172.0" text="Select Employee" wrapText="true">
+         <font>
+            <Font name="Calibri Bold" size="20.0" />
+         </font>
+      </Label>
+      <Line endX="600.0" fill="#e82424" layoutY="85.0" stroke="#e40c0c" strokeMiterLimit="14.0" strokeType="OUTSIDE" strokeWidth="2.0" />
+      <Button layoutX="37.0" layoutY="293.0" mnemonicParsing="false" onAction="#openTables" prefHeight="93.0" prefWidth="251.0" style="-fx-border-color: black;" text="View Tables / Pay">
+         <font>
+            <Font name="Leelawadee UI Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="receiverBtn" layoutX="320.0" layoutY="293.0" mnemonicParsing="false" onAction="#openReceiver" prefHeight="93.0" prefWidth="251.0" style="-fx-border-color: black;" text="Receiver">
+         <font>
+            <Font name="Leelawadee UI Bold" size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

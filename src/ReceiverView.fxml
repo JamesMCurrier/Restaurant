@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ReceiverController">
+   <children>
+      <ListView fx:id="itemsList" layoutX="24.0" layoutY="87.0" prefHeight="349.0" prefWidth="299.0" />
+      <Label layoutX="89.0" layoutY="60.0" text="Ingredients to be Restocked" />
+      <Button layoutX="135.0" layoutY="451.0" mnemonicParsing="false" onAction="#restockItem" text="Restock" />
+      <ComboBox fx:id="employeeComboBox" layoutX="24.0" layoutY="14.0" onAction="#setCurrEmployee" onMousePressed="#initializeReceiverScene" prefHeight="39.0" prefWidth="299.0" promptText="Select Employee" />
+      <Button fx:id="refreshButton" disable="true" layoutX="271.0" layoutY="56.0" mnemonicParsing="false" onAction="#refresh" text="Refresh" />
+   </children>
+</AnchorPane>

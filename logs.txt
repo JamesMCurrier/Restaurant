@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-12-03T05:30:44.235903400Z</date>
+  <millis>1543815044235</millis>
+  <nanos>903400</nanos>
+  <sequence>0</sequence>
+  <logger>Event Logger</logger>
+  <level>INFO</level>
+  <class>EventLogger</class>
+  <method>logInfo</method>
+  <thread>16</thread>
+  <message>UNABLE_TO_COMPLETE</message>
+</record>
+<record>
+  <date>2018-12-03T05:31:17.858525600Z</date>
+  <millis>1543815077858</millis>
+  <nanos>525600</nanos>
+  <sequence>1</sequence>
+  <logger>Event Logger</logger>
+  <level>INFO</level>
+  <class>EventLogger</class>
+  <method>logInfo</method>
+  <thread>16</thread>
+  <message>ORDER</message>
+</record>
+<record>
+  <date>2018-12-03T05:32:00.178126600Z</date>
+  <millis>1543815120178</millis>
+  <nanos>126600</nanos>
+  <sequence>2</sequence>
+  <logger>Event Logger</logger>
+  <level>INFO</level>
+  <class>EventLogger</class>
+  <method>logInfo</method>
+  <thread>16</thread>
+  <message>ORDER_READY</message>
+</record>
+<record>
+  <date>2018-12-03T05:32:00.179166600Z</date>
+  <millis>1543815120179</millis>
+  <nanos>166600</nanos>
+  <sequence>3</sequence>
+  <logger>Event Logger</logger>
+  <level>INFO</level>
+  <class>EventLogger</class>
+  <method>logInfo</method>
+  <thread>16</thread>
+  <message>REMOVE_ORDER</message>
+</record>
+<record>
+  <date>2018-12-03T05:32:14.314271500Z</date>
+  <millis>1543815134314</millis>
+  <nanos>271500</nanos>
+  <sequence>4</sequence>
+  <logger>Event Logger</logger>
+  <level>INFO</level>
+  <class>EventLogger</class>
+  <method>logInfo</method>
+  <thread>16</thread>
+  <message>SERVE</message>
+</record>
+</log>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane prefHeight="637.0" prefWidth="1011.0" style="-fx-background-color: #999999;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ServerController">
+   <top>
+      <ComboBox fx:id="employeeComboBox" onAction="#setCurrServer" onMousePressed="#initializeServerScene" promptText="Select Server" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets top="8.0" />
+         </BorderPane.margin>
+      </ComboBox>
+   </top>
+   <left>
+      <VBox alignment="CENTER" prefHeight="501.0" prefWidth="242.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="menuItemsLbl" alignment="CENTER" text="Menu Items" />
+            <ListView fx:id="menuItemsList" prefHeight="536.0" prefWidth="232.0" style="-fx-background-color: #cccccc;" />
+            <HBox alignment="BOTTOM_CENTER" prefHeight="8.0" prefWidth="232.0">
+               <children>
+                  <Button fx:id="addItemBtn" disable="true" mnemonicParsing="false" onAction="#addToOrder" text="Add Item">
+                     <VBox.margin>
+                        <Insets left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets top="5.0" />
+               </padding>
+            </HBox>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </VBox>
+   </left>
+   <right>
+      <VBox alignment="TOP_CENTER" prefHeight="552.0" prefWidth="250.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label prefHeight="12.0" prefWidth="178.0" text="Orders Ready to Serve" />
+            <ListView fx:id="readyOrderList" prefHeight="506.0" prefWidth="267.0" style="-fx-background-color: #cccccc;">
+               <VBox.margin>
+                  <Insets bottom="8.0" />
+               </VBox.margin>
+            </ListView>
+            <HBox alignment="BOTTOM_CENTER">
+               <children>
+                  <Button fx:id="viewOrdersBtn" disable="true" mnemonicParsing="false" onAction="#viewOrders" text="View Ready Orders" />
+                  <Button fx:id="ServeBtn" mnemonicParsing="false" onAction="#serveOrder" text="Serve" />
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </VBox>
+   </right>
+   <center>
+      <VBox alignment="TOP_CENTER" prefHeight="491.0" prefWidth="372.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="currOrderLabel" alignment="TOP_CENTER" text="No Current Order" textAlignment="CENTER" />
+            <ListView fx:id="currOrderList" prefHeight="445.0" prefWidth="368.0" style="-fx-background-color: #cccccc;" />
+            <HBox prefHeight="66.0" prefWidth="244.0">
+               <children>
+                  <Label text="Total Price ($):" />
+                  <Region HBox.hgrow="ALWAYS" />
+                  <Label id="lbl_price" fx:id="costLbl" alignment="BOTTOM_RIGHT" text="0" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="BOTTOM_CENTER" maxHeight="-Infinity" prefHeight="13.0" prefWidth="345.0">
+               <children>
+                  <Button fx:id="createOrderBtn" disable="true" mnemonicParsing="false" onMousePressed="#createOrder" text="Create Order" />
+                  <Button fx:id="sendOrderBtn" disable="true" mnemonicParsing="false" onAction="#SendOrder" text="Send Order" />
+                  <Button fx:id="modifyItemBtn" disable="true" mnemonicParsing="false" onAction="#modifyItem" text="Modify Item" />
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </VBox>
+   </center>
+</BorderPane>

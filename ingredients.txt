@@ -1,0 +1,7 @@
+bread, 123, 10, 20
+coffee, 23, 10, 20
+lettuce, 23, 10, 20
+tomato, 34, 10, 20
+burger, 3, 10, 20
+milk, 54, 5, 20
+sugar, 65, 5, 20
