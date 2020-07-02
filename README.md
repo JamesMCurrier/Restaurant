@@ -1,12 +1,12 @@
 Created by Mark, Brandon, Teo, and James
 
 
------ PROGRAM CAPABILITIES AND DESCRIPTION -----
+# PROGRAM CAPABILITIES AND DESCRIPTION
 
 The program will take in input for the Menu and the Inventory because they are serializable. As a result, when the user
 closes the program and opens them again, any changes made to either would be remembered.
 
--- Employees --
+## Employees
 
 There are three different types of Employees working at the Restaurant:
 Manager: the manager of the restaurant. The manager is able to check on the inventory, change the amount of supplies
@@ -14,7 +14,7 @@ being ordered when restocking, etc.
 Server: one of the servers of the restaurant. Servers are able to deliver food, take orders, etc.
 Chef: one of the chefs of the restaurant. They can confirm orders and prepare them.
 
--- Menu, MenuItems, and Ingredients --
+## Menu, MenuItems, and Ingredients
 
 The menu contains many MenuItems that can be ordered. A MenuItem is basically a single food item. For example,
 Hamburgers and Coffee are MenuItems. Each MenuItem can be customized. There is no limitation on the customization
@@ -24,19 +24,19 @@ McDonalds and Tim Hortons locations). For example, one can add extra lettuce to 
 Each MenuItem is further made up of Ingredients. Each Ingredient represents one single food ingredient. Examples include
 buns, lettuce, etc. They can be added to MenuItems.
 
--- Inventory --
+## Inventory
 
 The restaurant's stock of ingredients is stored in the Inventory. Whenever a Order is made, the required Ingredients
 will be removed from the Inventory. The Inventory can viewed from a Manager Employee.
 
--- Orders and Bills --
+## Orders and Bills 
 
 Whenever a Server creates an Order, it gets added to the Bill for the table that ordered it. Each Order consists
 of one or more MenuItems.
 
 
 
------ HOW TO USE THE PROGRAM -----
+# HOW TO USE THE PROGRAM
 
 The following is a quick guide on how one can use the program.
 
